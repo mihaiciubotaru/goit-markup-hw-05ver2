@@ -37,7 +37,7 @@
                     <div style="text-align: center;">
                     <h2>EFFECTIVE SOLUTIONS FOR<br>
                         YOUR BUSINESS<br>
-                        <button type="button" class="main__button">Request our service</button>
+                        <button data-modal-open type="button" class="main__button">Request our service</button>
                     </h2>
                     </div>
                 </section>
@@ -86,26 +86,29 @@
                 <section>
                     <h2 style="text-align: center;">What we do</h2>
                     <ul class="index__main__images__ul">
-                        <li style="list-style-type: none;">
+                        <li style="list-style-type: none; text-align: center;">
                             <img 
                                 src="./images/tech_1_w370.jpg"
                                 alt="Working on keyboard"
                                 width="370"
                             >
+                            <div class="index__main__images__text">DESKTOP APPS</div>
                         </li>
-                        <li style="list-style-type: none;">
+                        <li style="list-style-type: none; text-align: center;">
                             <img 
                                 src="./images/tech_2_w370.jpg"
                                 alt="Mobile style on display"
                                 width="370"
                             >
+                            <div class="index__main__images__text">MOBILE APPS</div>
                         </li>
-                        <li style="list-style-type: none;">
+                        <li  style="list-style-type: none; text-align: center;">
                             <img 
                                 src="./images/tech_3_w370.jpg"
                                 alt="Color selection"
                                 width="370"
                             >
+                            <div class="index__main__images__text">DESIGN SOLUTIONS</div>
                         </li>
                     </ul>
                 </section>
@@ -314,5 +317,12 @@
                 </div>
             </div>
         </footer>
+        <div data-modal class="is-hidden">
+            <div data-modal-content>
+                <div> text pentru test in modal</div>
+                <button data-modal-close type="button">X</button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
