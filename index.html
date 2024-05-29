@@ -12,9 +12,34 @@
             <div>
                 <div class="top-menu">
                     <div class="top-menu__webstudio"><span style="color: #2196f3;">Web</span>Studio</div>
-                    <div>
+                    <div style="margin-top: 36px;">
                         <nav>
-                            <span class="header__static_text">Studio</span>&nbsp;&nbsp;&nbsp;<a href="./portofoliu.html" class="header__active_text">Portfolio</a>&nbsp;&nbsp;&nbsp;<a href="." class="header__active_text">Contacts</a>
+                            <div class="header__row-cells">
+                                <div class="header__column-cells">
+                                    <span class="header__static_text header__cell">Studio</span>
+                                    <div  class="header__cell" style="padding-top: 10px;">
+                                        <svg class="header__line">
+                                            <use href="./images/icons.svg#line_sprite" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="header__column-cells header__cell">
+                                    <a href="./portofoliu.html" class="header__active_text header__cell">Portfolio</a>
+                                    <div>
+                                        <svg class="header__line" style="padding-top: 10px;">
+                                            <use href="./images/icons.svg#line_sprite" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="header__column-cells header__cell">
+                                    <a href="." class="header__active_text">Contacts</a>
+                                    <div>
+                                        <svg class="header__line" style="padding-top: 10px;">
+                                            <use href="./images/icons.svg#line_sprite" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
                         </nav>
                     </div>
                     <div class="top-menu__contacts">
@@ -319,8 +344,63 @@
         </footer>
         <div data-modal class="is-hidden">
             <div data-modal-content>
-                <div> text pentru test in modal</div>
-                <button data-modal-close type="button">X</button>
+                <form name="user-information" class="index__user-information">
+                    
+                    <div style="font-size: 20px; align-self: center; margin-top: 30px;"> 
+                        Leave your information and we'll call you back
+                    </div>
+                    <div class="index__user-information__input-module">
+                        <div>
+                            <label for="text">Name:</label>
+                        </div>                    
+                        <div class="index__user-information__input-block">
+                            <svg height="32px" width="32px">
+                                <use href="./images/icons.svg#person" />
+                            </svg>
+                            <input class="index__user-information__input-text" type="text" name="name" id="name"  required />
+                        </div>
+                    </div>
+                    <div class="index__user-information__input-module">
+                        <div>
+                            <label for="phone">Telephone:</label>
+                        </div>                    
+                        <div class="index__user-information__input-block">
+                            <svg height="32px" width="32px">
+                                <use href="./images/icons.svg#phone_receiver" />
+                            </svg>
+                            <input class="index__user-information__input-text" type="tel" name="phone" id="phone" required />
+                        </div>
+                    </div>
+                    <div class="index__user-information__input-module">
+                        <div>
+                            <label for="email">E-mail:</label>
+                        </div>
+                        <div class="index__user-information__input-block">
+                            <svg height="32px" width="32px">
+                                <use href="./images/icons.svg#email_black" />
+                            </svg>
+                            <input class="index__user-information__input-text" type="email" name="email" id="email" required />
+                        </div>
+                    </div>
+                    <div class="index__user-information__comments-module">
+                        <div>
+                            <label for="comments">Comments:</label>
+                        </div>
+                        <div class="index__user-information__input-block">
+                            <textarea class="index__user-information__comments-text" rows="4" name="comments" id="comments"></textarea>
+                        </div>
+                    </div>
+                    <label class="modal-form__position modal-form__checked">
+                        <input type="checkbox" name="agree" value="agree" class="modal-form__input"/>
+                        <span class="replace-checkbox modal-checkbox__position">
+                           <svg>
+                                <use href="./images/icons.svg#checkbox_open"></use>
+                            </svg>
+                        </span>
+                        I agree with the letter and accept the
+                        <a href="#" class="condition">Terms and Conditions</a>
+                    </label>
+                <button data-modal-close type="button" style="align-self: center;">X</button>
             </div>
         </div>
         <script src="./js/modal.js"></script>
