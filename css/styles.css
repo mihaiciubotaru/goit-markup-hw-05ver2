@@ -320,7 +320,7 @@ header {
 
 .portfolio__main_image_over {
   position: absolute;
-  top: 100%;
+  top: 90%;
   left: 0;
   width: 100%;
   height: 0%;
@@ -331,8 +331,8 @@ header {
 }
 
 .portfolio__main_image:hover .portfolio__main_image_over {
-  height: 100%;
-  top: 0;
+  height: 90%;
+  top: 0%;
   transition-property: height, top;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -365,10 +365,16 @@ header {
 .header__cell {
   text-align: center;
 }
-.header__line {
+.header__line_static {
   transform:scaleX(1.05);
   height: 70px;
   width: 58px;
+}
+.div_active {
+  display: none;
+}
+.header__column-cells:hover > .div_active {
+  display: block;
 }
 
 .index__footer {
