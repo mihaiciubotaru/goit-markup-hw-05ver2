@@ -134,10 +134,20 @@ header {
 }
 
 .index__main__customer-icon {
+  filter: invert(78%) sepia(9%) saturate(161%) hue-rotate(189deg) brightness(90%) contrast(94%);
   width: 170px;
   height: 92px;
   border:1px solid black;
   border-radius: 4px;
+  cursor: pointer;
+}
+.index__main__customer-icon:hover {
+  filter: invert(49%) sepia(13%) saturate(3109%) hue-rotate(165deg) brightness(104%) contrast(97%);
+  width: 170px;
+  height: 92px;
+  transition-property: filter;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .top-menu {
@@ -162,6 +172,7 @@ header {
   width: 20px;
   height: 20px;
   padding-top: 12px;
+  cursor: pointer;
 }
 /* .index__social-network:hover {
   stroke: #ffffff;
@@ -177,6 +188,7 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-width: 2px;
+  cursor: pointer;
 }
 .index__social-box:hover {
   background-color:#2196f3;
